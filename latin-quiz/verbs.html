@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/latin-quiz/src/verbstyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+        <div class="container-div">
+            <div class="link-div">
+                <button class="link-button" id="verb-button" onclick="window.location.href='/latin-quiz/index.html'">Noun test </button>
+                <button class="link-button" id="adjective-button" onclick="window.location.href='/latin-quiz/adjectives.html'">Adjective test</button>
+            </div>
+            <div class="button-container">
+                <div>
+                    <button data-mood="indicative" class="verb-choice-button starting-form">indicative</button>
+                    <button data-mood="subjunctive" class="verb-choice-button">subjunctive</button>
+                    <button data-mood="imperative" class="verb-choice-button">imperative</button>
+                </div>
+                <div>
+                    <button data-voice="active" class="verb-choice-button starting-form">active</button>
+                    <button data-voice="passive" class="verb-choice-button">passive</button>
+                </div>
+                <div>
+                    <button data-tense="present" class="verb-choice-button starting-form">present</button>
+                    <button data-tense="imperfect" class="verb-choice-button">imperfect</button>
+                    <button data-tense="future" class="verb-choice-button">future</button>
+                    <button data-tense="perfect" class="verb-choice-button">perfect</button>
+                    <button data-tense="pluperfect" class="verb-choice-button">pluperfect</button>
+                    <button data-tense="futurePerfect" class="verb-choice-button">future perfect</button>
+                </div>
+            </div>
+
+            <p class="title-text">Latin verb test</p>
+            <div class="dropdown-menu-container">
+                <label for="conjugation-dropdown">Conjugation:</label>
+                <select id="conjugation-dropdown">
+                    <option value="1st-conj">1st conj.</option>
+                    <option value="2nd-conj">2nd conj.</option>
+                    <option value="3rd-conj">3rd conj.</option>
+                    <option value="4th-conj">4th conj.</option>
+                </select>
+            </div>
+            <p id="verb-presenter">Your word is: </p>
+            <p id="principle-parts">Principle parts: </p>
+            <button id="new-verb-button">New Word</button>
+        
+            <div class="answer-container-div">
+                <div class="answer-div">
+                    <p class="answer-text">1st per. sg: </p>
+                    <input class="answer" type="text" id="1st per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">1st per. pl: </p>
+                    <input class="answer" type="text" id="1st per.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">2nd per. sg: </p>
+                    <input class="answer" type="text" id="2nd per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">2nd per. pl: </p>
+                    <input class="answer" type="text" id="2nd per.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">3rd per. sg: </p>
+                    <input class="answer" type="text" id="3rd per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">3rd per. pl: </p>
+                    <input class="answer" type="text" id="3rd per.pl">
+                </div>
+            </div>
+            <button class="answer-button" id="verb-answer-button">Check answers</button>
+            <div class="result-container-div" id="result-verb-container-div">
+
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/latin-quiz/src/verbs.js"></script>
+</body>
+</html>

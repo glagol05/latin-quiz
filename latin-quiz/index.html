@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/latin-quiz/src/nounstyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div class="container-div">
+            <div class="link-div">
+                <button class="link-button" id="verb-button" onclick="window.location.href='/latin-quiz/verbs.html'">Verb quiz</button>
+                <button class="link-button" id="adjective-button" onclick="window.location.href='/latin-quiz/adjectives.html'">Adjective quiz</button>
+            </div>
+            <p class="title-text">Latin noun quiz</p>
+            <div class="dropdown-menu-container">
+                <label for="declension-dropdown">Declension:</label>
+                <select id="declension-dropdown">
+                    <option value="1st-decl">1st decl.</option>
+                    <option value="2nd-decl">2nd decl.</option>
+                    <option value="3rd-decl">3rd decl.</option>
+                    <option value="4th-decl">4th decl.</option>
+                    <option value="5th-decl">5th decl.</option>
+                </select>
+            </div>
+            <p id="word-presenter">Your word is: </p>
+            <button id="new-word-button">New Word</button>
+        
+            <div class="answer-container-div">
+                <div class="answer-div">
+                    <p class="answer-text">Nom. sg: </p>
+                    <input class="answer" type="text" id="nom.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Nom. pl: </p>
+                    <input class="answer" type="text" id="nom.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Gen. sg: </p>
+                    <input class="answer" type="text" id="gen.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Gen. pl: </p>
+                    <input class="answer" type="text" id="gen.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Dat. sg: </p>
+                    <input class="answer" type="text" id="dat.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Dat. pl: </p>
+                    <input class="answer" type="text" id="dat.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Acc. sg: </p>
+                    <input class="answer" type="text" id="acc.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Acc. pl: </p>
+                    <input class="answer" type="text" id="acc.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Abl. sg: </p>
+                    <input class="answer" type="text" id="abl.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">Abl. pl: </p>
+                    <input class="answer" type="text" id="abl.pl">
+                </div>
+            </div>
+            <button class="answer-button" id="answer-button">Check answers</button>
+            <div class="result-container-div" id="result-container-div">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/latin-quiz/src/nouns.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/latin-quiz/src/adjectivestyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+        <div class="container-div">
+            <div class="link-div">
+                <button class="link-button" id="verb-button" onclick="window.location.href='/latin-quiz/index.html'">Noun quiz</button>
+                <button class="link-button" id="adjective-button" onclick="window.location.href='/latin-quiz/verb.html'">Verb quiz</button>
+            </div>
+            <div class="button-container">
+                <div>
+                    <button data-gender="masculine" class="adjective-choice-button starting-form">masculine</button>
+                    <button data-gender="feminine" class="adjective-choice-button">feminine</button>
+                    <button data-gender="neuter" class="adjective-choice-button">neuter</button>
+                </div>
+                <div>
+                    <button data-termination="threeTermination" class="adjective-choice-button starting-form">three termination</button>
+                    <button data-termination="twoTermination" class="adjective-choice-button">two termination</button>
+                    <button data-termination="oneTermination" class="adjective-choice-button">one termination</button>
+                </div>
+                <div>
+                    <button data-case="nominative" class="adjective-choice-button starting-form">nominative</button>
+                    <button data-case="genitive" class="adjective-choice-button">genitive</button>
+                    <button data-case="dative" class="adjective-choice-button">dative</button>
+                    <button data-case="accusative" class="adjective-choice-button">accusative</button>
+                    <button data-case="ablative" class="adjective-choice-button">ablative</button>
+                </div>
+                <div>
+                    <button data-degree="positive" class="adjective-choice-button starting-form">positive</button>
+                    <button data-degree="comparative" class="adjective-choice-button">comparative</button>
+                    <button data-degree="superlative" class="adjective-choice-button">superlative</button>
+                </div>
+            </div>
+
+            <p class="title-text">Latin adjective quiz</p>
+            <div class="dropdown-menu-container">
+                <label for="conjugation-dropdown">Conjugation:</label>
+                <select id="conjugation-dropdown">
+                    <option value="1st-2nd-decl">1st & 2nd decl.</option>
+                    <option value="3rd-decl">3rd decl.</option>
+                    <option value="irregular-decl">Irregular</option>
+                </select>
+            </div>
+            <p id="verb-presenter">Your word is: </p>
+            <button id="new-verb-button">New Word</button>
+        
+            <div class="answer-container-div">
+                <div class="answer-div">
+                    <p class="answer-text">1st per. sg: </p>
+                    <input class="answer" type="text" id="1st per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">1st per. pl: </p>
+                    <input class="answer" type="text" id="1st per.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">2nd per. sg: </p>
+                    <input class="answer" type="text" id="2nd per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">2nd per. pl: </p>
+                    <input class="answer" type="text" id="2nd per.pl">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">3rd per. sg: </p>
+                    <input class="answer" type="text" id="3rd per.sg">
+                </div>
+                <div class="answer-div">
+                    <p class="answer-text">3rd per. pl: </p>
+                    <input class="answer" type="text" id="3rd per.pl">
+                </div>
+            </div>
+            <button class="answer-button" id="verb-answer-button">Check answers</button>
+            <div class="result-container-div" id="result-verb-container-div">
+
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/latin-quiz/src/adjectives.js"></script>
+</body>
+</html>

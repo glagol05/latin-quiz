@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-image: url("/background/romanbackground2.png");
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link-div {
+    display: flex;
+    justify-content: center;
+    background-color: #4B2E83;
+    width: 100vw;
+    height: 50px;
+    margin-top: 0px;
+    gap: 10px;
+}
+
+.link-button {
+    height: 20px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.answer-container-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    column-gap: 20px;
+    
+}
+
+.title-text {
+    font-size: 40px;
+}
+
+.dropdown-menu-container {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.answer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.answer-text {
+    font-size: 20px;
+}
+
+.answer {
+    width: 200px;
+    height: 20px;
+}
+
+.result-container-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.result-container-div p {
+    flex: 0 0 50%;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.result-container-div .cell {
+    width: 200px;
+    text-align: left;
+}
+
+.incorrect-answer {
+    color: red;
+}
+
+.verb-choice-button.active {
+    background-color: green;
+    color: white;
+}
+
+.verb-choice-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
