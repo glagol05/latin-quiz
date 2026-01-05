@@ -44,7 +44,7 @@ function generateNoun() {
                 break;
         }
 
-            document.getElementById("word-presenter").innerHTML = "Your word is: " + randomWord;
+            document.getElementById("word-presenter").innerHTML = "Your word is: " + randomWord + ", " + currentWordObject.forms.gen.sg;
     })
 }
 

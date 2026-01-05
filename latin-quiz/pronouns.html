@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/latin-quiz/src/nounstyles.css">
+    <link rel="stylesheet" href="/latin-quiz/src/pronounstyles.css">
     <title>Document</title>
 </head>
 <body>
     <div id="root">
         <div class="container-div">
             <div class="link-div">
+                <button class="link-button" id="verb-button" onclick="window.location.href='/latin-quiz/index.html'">Noun test </button>
                 <button class="link-button" id="verb-button" onclick="window.location.href='/latin-quiz/verbs.html'">Verb quiz</button>
                 <button class="link-button" id="adjective-button" onclick="window.location.href='/latin-quiz/adjectives.html'">Adjective quiz</button>
-                <button class="link-button" id="pronoun-button" onclick="window.location.href='/latin-quiz/pronouns.html'">Pronoun quiz</button>
             </div>
-            <p class="title-text">Latin noun quiz</p>
+            <p class="title-text">Latin pronoun quiz</p>
             <div class="dropdown-menu-container">
                 <label for="declension-dropdown">Declension:</label>
                 <select id="declension-dropdown">
@@ -77,6 +77,6 @@
         </div>
     </div>
 
-    <script type="module" src="/latin-quiz/src/nouns.js"></script>
+    <script type="module" src="/latin-quiz/src/pronouns.js"></script>
 </body>
 </html>
